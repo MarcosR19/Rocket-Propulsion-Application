@@ -12,10 +12,10 @@ for i = 1:length(thrustV)
     [t,v] = ode45(@(t,v) (f - c*v)/m, timeInt, v0);
 
     % Plot values
-    plot(t, v, 'LineWidth', 2)
+    plot(t, v)
 
     % Report values at each N level
-    fprintf("When thrust is at %d N, velocity after 10 s is %.2f m/s\n", f, v(end));
+    fprintf("When thrust is at %d N, velocity after 10 s is %.2f m/s\n",f,v(end));
 end
 grid on
 title('Rocket Propulsion Application')
