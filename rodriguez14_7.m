@@ -14,7 +14,7 @@ for i = 1:length(thrustV)
     % Plot values
     plot(t, v)
 
-    % Report values at each N level
+    % Report values at each thrust value
     fprintf("When thrust is at %d N, velocity after 10 s is %.2f m/s\n",f,v(end));
 end
 grid on
